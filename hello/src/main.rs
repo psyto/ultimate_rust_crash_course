@@ -1,8 +1,9 @@
 fn main() {
-    let x = 5;
-    {
-        let x = 10;
-        println!("{}", x);
+    let enigma: i32;
+    if true {
+        enigma = 10;
+    } else {
+        enigma = 5;
     }
-    println!("{}", x);
+    println!("enigma is {}", enigma);
 }
