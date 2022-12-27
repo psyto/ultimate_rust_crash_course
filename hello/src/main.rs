@@ -1,5 +1,8 @@
 fn main() {
-    let mut bunnies = 16;
-    bunnies = 3;
-    println!("Hello, world! {}", bunnies);
+    let x = 5;
+    {
+        let x = 10;
+        println!("{}", x);
+    }
+    println!("{}", x);
 }
